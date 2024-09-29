@@ -3,7 +3,7 @@
 # ------------------------------------------------------------ #
 
 START_TXT = """
-Hi, welcome to Advance Content Saver Bot, Designed to save Restricted Messages From Public/Private Channels and Private Groups. \n\n 🔒 /login - Login Session  \n\n 🔓 /logout - Logout Session \n\n 🗃️ /batch - 1000 Files \n\n 🛠️ /settings - Check Now \n\n 🛡️How To Use BoT - [TUTORIAL](https://t.me/HB_Tutorial/5) \n\n 🌸 DEVELOPER - [•─╼⃟❀ 𓆩𝐇Â̬𝕻𝕻𝗬𓆪 ❀⃟╾─•](https://t.me/Chats_happy_bot) \n
+Hi, welcome to Advance Content Saver Bot, Designed to save Restricted Messages From Public/Private Channels and Private Groups. \n\n 🔒 /login - Login Session  \n\n 🔓 /logout - Logout Session \n\n 🗃️ /batch - 1000 Files \n\n 🛠️ /settings - Check Now \n\n 🛡️How To Use BoT - [TUTORIAL](https://t.me/HB_Tutorial/5) \n\n🌸 DEVELOPER [•─╼⃟❀ 𓆩𝐇Â̬𝕻𝕻𝗬𓆪 ❀⃟╾─•](https://t.me/Chats_happy_bot) \n
 """
 
 FORCE_MSG = """
