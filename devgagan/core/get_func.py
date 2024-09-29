@@ -111,7 +111,7 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
 
             # CODES are hidden             
 
-            await edit.edit('Trying to Uplaod ...')
+            await edit.edit('Trying to Uplode ...')
             
             if msg.media == MessageMediaType.VIDEO and msg.video.mime_type in ["video/mp4", "video/x-matroska"]:
 
@@ -438,7 +438,7 @@ async def set_rename_command(user_id, custom_rename_tag):
 # Function to get the user's custom renaming preference
 def get_user_rename_preference(user_id):
     # Retrieve the user's custom renaming tag if set, or default to 'Team SPY'
-    return user_rename_preferences.get(str(user_id), 'Team SPY')
+    return user_rename_preferences.get(str(user_id), 'Happy Bots')
 
 # Function to set custom caption preference
 async def set_caption_command(user_id, custom_caption):
@@ -465,7 +465,7 @@ async def settings_command(event):
         [Button.inline("Remove Words", b'delete'), Button.inline("Reset", b'reset')],
         [Button.inline("Login", b'addsession'), Button.inline("Logout", b'logout')],
         [Button.inline("Set Thumbnail", b'setthumb'), Button.inline("Remove Thumbnail", b'remthumb')],
-        [Button.url("Report Errors", "https://t.me/devgaganin")]
+        [Button.url("Report Errors", "https://t.me/chats_happy_bot")]
     ]
     
     await gf.send_file(
